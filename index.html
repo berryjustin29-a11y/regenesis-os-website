@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regenesis-OS | Detecting Biological Collapse Before It Happens</title>
+  <meta name="description" content="AI-powered physiological disorder detection for ICU patients. Detecting cardiac arrest up to 10 hours before collapse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">REGENESIS<span>-OS</span></a>
+      <ul class="nav-links">
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#validation">Validation</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#investors" class="nav-cta">Investors</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#technology">Technology</a>
+      <a href="#validation">Validation</a>
+      <a href="#vision">Vision</a>
+      <a href="#about">About</a>
+      <a href="#investors">Investors</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="bioCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Pre-Seed &nbsp;·&nbsp; Medical AI &nbsp;·&nbsp; Los Angeles
+      </div>
+      <h1 class="hero-headline">
+        Detecting<br/>
+        Biological Collapse<br/>
+        <em>Before It Happens.</em>
+      </h1>
+      <p class="hero-sub">
+        An AI system that identifies physiological disorder in ICU patients
+        up to <strong>10 hours</strong> before cardiac arrest —
+        validated on 1,310 confirmed cases from MIMIC-IV.
+      </p>
+      <div class="hero-actions">
+        <a href="#technology" class="btn-primary">Explore the Science</a>
+        <a href="#investors" class="btn-ghost">Investor Inquiries</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-val" data-target="0.70" data-prefix="" data-suffix="">0.70</span>
+        <span class="stat-label">AUC Score</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val">10 hrs</span>
+        <span class="stat-label">Median Detection Window</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val">1,310</span>
+        <span class="stat-label">Validated Patient Cases</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val">1</span>
+        <span class="stat-label">Provisional Patent Filed</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem">
+    <div class="container">
+      <div class="section-tag">The Problem</div>
+      <div class="problem-grid">
+        <div class="problem-left">
+          <h2>Hospitals are reacting.<br/>We need to <em>predict.</em></h2>
+          <p>Existing early warning systems like MEWS and NEWS2 are rule-based threshold tools. They wait for a value to breach a limit. By then — it's often too late.</p>
+          <p>The real signal is not the breach. It's the disorder building toward it.</p>
+        </div>
+        <div class="problem-right">
+          <div class="problem-card">
+            <div class="problem-icon">⚠</div>
+            <h3>Late Detection</h3>
+            <p>Current systems detect deterioration after significant physiological decline has already occurred</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🔔</div>
+            <h3>False Alarm Burden</h3>
+            <p>Threshold-based alarms generate high false positive rates causing alarm fatigue in clinical staff</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📊</div>
+            <h3>No Disorder Awareness</h3>
+            <p>No existing system measures biological signal order — the structural coherence that collapses before catastrophic events</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🏥</div>
+            <h3>Reactive Medicine</h3>
+            <p>Hundreds of thousands of in-hospital cardiac arrests annually — most preceded by detectable physiological signals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section id="technology">
+    <div class="container">
+      <div class="section-tag">The Technology</div>
+      <h2 class="section-title">Biological Signal Order.<br/>A New Measurable Property.</h2>
+      <p class="section-sub">Unlike systems that monitor absolute values, Regenesis-OS measures the structural organization of biological signals over time. As a system approaches collapse — disorder emerges.</p>
+
+      <div class="tech-pipeline">
+        <div class="pipeline-step">
+          <div class="step-num">01</div>
+          <div class="step-icon">📡</div>
+          <h3>Signal Acquisition</h3>
+          <p>Continuous vital sign data ingested from existing hospital monitoring infrastructure. No new hardware required.</p>
+          <div class="step-signals">
+            <span>ECG</span><span>HR</span><span>BP</span><span>SpO2</span><span>RR</span>
+          </div>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">02</div>
+          <div class="step-icon">🗺</div>
+          <h3>Field Representation</h3>
+          <p>Raw signals transformed into spatiotemporal signal fields capturing relationships across time, space, and biological subsystems.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">03</div>
+          <div class="step-icon">📐</div>
+          <h3>Order Metrics Engine</h3>
+          <p>Custom metrics quantify deviation from baseline signal order — entropy, variance, gradient energy, anisotropy, cross-system coupling.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">04</div>
+          <div class="step-icon">🧠</div>
+          <h3>Confidence-Aware Classification</h3>
+          <p>Temporal sequences analyzed to detect and classify five distinct disruption modes with associated confidence values.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-num">05</div>
+          <div class="step-icon">🔄</div>
+          <h3>Adaptive Control</h3>
+          <p>Closed-loop system selects interventions based on detected pattern and confidence — modulating intensity to biological response.</p>
+        </div>
+      </div>
+
+      <div class="disruption-modes">
+        <div class="modes-header">
+          <h3>Five Disruption Modes Detected</h3>
+          <p>Regenesis-OS classifies the type of biological disorder — not just its presence</p>
+        </div>
+        <div class="modes-grid">
+          <div class="mode-chip mode-1">Diffuse Shock</div>
+          <div class="mode-chip mode-2">Gradient Collapse</div>
+          <div class="mode-chip mode-3">Localized Spike</div>
+          <div class="mode-chip mode-4">Noise Flood</div>
+          <div class="mode-chip mode-5">Repetitive Micro-Damage</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section id="validation">
+    <div class="container">
+      <div class="section-tag">Clinical Validation</div>
+      <h2 class="section-title">Built on the World's Most<br/>Rigorous Critical Care Data.</h2>
+
+      <div class="validation-grid">
+        <div class="validation-main">
+          <div class="val-card highlight">
+            <div class="val-label">Dataset</div>
+            <div class="val-value">MIMIC-IV v3.1</div>
+            <div class="val-desc">PhysioNet critical care database — the gold standard for ICU research</div>
+          </div>
+          <div class="val-card">
+            <div class="val-label">Model Performance</div>
+            <div class="val-value auc">AUC <span>0.70</span></div>
+            <div class="val-desc">5-fold stratified cross-validation</div>
+          </div>
+          <div class="val-card">
+            <div class="val-label">Detection Window</div>
+            <div class="val-value">10 Hours</div>
+            <div class="val-desc">Median time before cardiac arrest event</div>
+          </div>
+          <div class="val-card">
+            <div class="val-label">Patient Cases</div>
+            <div class="val-value">1,310</div>
+            <div class="val-desc">Confirmed ICU cardiac arrest cases</div>
+          </div>
+        </div>
+        <div class="validation-signals">
+          <h3>Signal Sources</h3>
+          <div class="signal-list">
+            <div class="signal-row">
+              <div class="signal-name">Heart Rate</div>
+              <div class="signal-bar"><div class="signal-fill" style="width:92%"></div></div>
+            </div>
+            <div class="signal-row">
+              <div class="signal-name">Non-Invasive BP Systolic</div>
+              <div class="signal-bar"><div class="signal-fill" style="width:85%"></div></div>
+            </div>
+            <div class="signal-row">
+              <div class="signal-name">Arterial BP Systolic</div>
+              <div class="signal-bar"><div class="signal-fill" style="width:88%"></div></div>
+            </div>
+            <div class="signal-row">
+              <div class="signal-name">Signal Entropy</div>
+              <div class="signal-bar"><div class="signal-fill" style="width:95%"></div></div>
+            </div>
+            <div class="signal-row">
+              <div class="signal-name">Signal Variance</div>
+              <div class="signal-bar"><div class="signal-fill" style="width:93%"></div></div>
+            </div>
+          </div>
+          <div class="ip-badge">
+            <div class="ip-icon">⚖</div>
+            <div>
+              <strong>Provisional Patent Filed</strong>
+              <p>USPTO — Systems and Methods for Detecting and Restoring Biological Signal Order Using Adaptive Closed-Loop Control</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section id="vision">
+    <div class="container">
+      <div class="section-tag">Platform Vision</div>
+      <h2 class="section-title">Cardiac Arrest Is<br/>Only The Beginning.</h2>
+      <p class="section-sub">The same disorder signal that precedes cardiac arrest precedes every major physiological collapse event. Regenesis-OS is a platform.</p>
+
+      <div class="vision-timeline">
+        <div class="timeline-item active">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 1 — Now</div>
+            <h3>ICU Cardiac Arrest Detection</h3>
+            <p>Deploy in ICU environments as a software layer on existing monitoring infrastructure. Clinical validation. FDA pathway.</p>
+            <div class="timeline-market">$2B–$5B addressable market</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 2</div>
+            <h3>Universal Collapse Prediction</h3>
+            <p>Expand to sepsis, respiratory failure, renal failure, hepatic collapse. One platform predicting all major in-hospital deterioration events.</p>
+            <div class="timeline-market">$50B–$100B addressable market</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 3</div>
+            <h3>Chronic Disease Early Warning</h3>
+            <p>Wearable integration detects pre-Alzheimer, pre-cancerous, and metabolic disorder years before clinical diagnosis.</p>
+            <div class="timeline-market">$200B–$500B addressable market</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-phase">Phase 4</div>
+            <h3>Biological Operating System</h3>
+            <p>Continuous whole-body biological stability monitoring. The intelligence layer inside every hospital bed and home device on earth.</p>
+            <div class="timeline-market">$1T+ platform opportunity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-tag">The Founder</div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2>Built by a Signal<br/>Detective.</h2>
+          <p>Justin C. Radford-Berry spent seven years as an independent quantitative researcher — finding anomalous patterns in complex, noisy, real-time data streams.</p>
+          <p>He noticed something: the methodology for detecting market disorder and the methodology for detecting biological disorder are structurally identical. Both are entropy detection problems in time series data.</p>
+          <p>He turned that lens on ICU telemetry data — and found a signal nobody had measured before.</p>
+          <div class="about-credentials">
+            <div class="cred-item">
+              <span class="cred-icon">🎓</span>
+              <span>BA Environmental Business — University of Redlands</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-icon">📊</span>
+              <span>7+ Years Independent Quantitative Research</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-icon">⚖</span>
+              <span>Provisional Patent Filed — USPTO 2024</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-icon">🏥</span>
+              <span>MIMIC-IV Research Access Secured</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-icon">📍</span>
+              <span>Los Angeles, California</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="quote-block">
+            <div class="quote-mark">"</div>
+            <p>Biological systems don't fail suddenly. They warn you. Rising entropy. Increasing variance. Loss of signal organization. The disorder precedes the collapse — every single time. We built the system that listens.</p>
+            <div class="quote-author">— Justin C. Radford-Berry, Founder & CEO</div>
+          </div>
+          <div class="mission-block">
+            <h3>Our Mission</h3>
+            <p>Detect biological collapse before it happens — giving clinicians the time they need to intervene, and giving patients the chance they deserve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVESTORS -->
+  <section id="investors">
+    <div class="container">
+      <div class="section-tag">Investors</div>
+      <h2 class="section-title">Join Us in Redefining<br/>Critical Care.</h2>
+
+      <div class="investors-grid">
+        <div class="raise-card">
+          <div class="raise-amount">$1.5M</div>
+          <div class="raise-label">Pre-Seed Round</div>
+          <div class="raise-details">
+            <div class="raise-row">
+              <span>Valuation Cap</span>
+              <span>$8M</span>
+            </div>
+            <div class="raise-row">
+              <span>Instrument</span>
+              <span>SAFE</span>
+            </div>
+            <div class="raise-row">
+              <span>Minimum Check</span>
+              <span>$50,000</span>
+            </div>
+            <div class="raise-row">
+              <span>Runway</span>
+              <span>18 Months</span>
+            </div>
+          </div>
+          <a href="mailto:justin@regenesis-os.com" class="btn-primary full">Request Materials</a>
+        </div>
+
+        <div class="use-of-funds">
+          <h3>Use of Funds</h3>
+          <div class="fund-item">
+            <div class="fund-label">
+              <span>ML Engineering</span>
+              <span class="fund-pct">40%</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-fill" style="width:40%; background: var(--cyan)"></div>
+            </div>
+          </div>
+          <div class="fund-item">
+            <div class="fund-label">
+              <span>Dataset Expansion</span>
+              <span class="fund-pct">25%</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-fill" style="width:25%; background: var(--green)"></div>
+            </div>
+          </div>
+          <div class="fund-item">
+            <div class="fund-label">
+              <span>Clinical Partnerships</span>
+              <span class="fund-pct">20%</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-fill" style="width:20%; background: var(--orange)"></div>
+            </div>
+          </div>
+          <div class="fund-item">
+            <div class="fund-label">
+              <span>Regulatory & Legal</span>
+              <span class="fund-pct">10%</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-fill" style="width:10%; background: var(--purple)"></div>
+            </div>
+          </div>
+          <div class="fund-item">
+            <div class="fund-label">
+              <span>Operations</span>
+              <span class="fund-pct">5%</span>
+            </div>
+            <div class="fund-bar">
+              <div class="fund-fill" style="width:5%; background: var(--mid-gray)"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="milestones-card">
+          <h3>Next Milestones</h3>
+          <div class="milestone-list">
+            <div class="milestone-item">
+              <div class="milestone-q cyan">Q1</div>
+              <div class="milestone-text">Dataset expanded to 3,000+ patients</div>
+            </div>
+            <div class="milestone-item">
+              <div class="milestone-q green">Q2</div>
+              <div class="milestone-text">AUC ≥ 0.80 achieved with expanded feature set</div>
+            </div>
+            <div class="milestone-item">
+              <div class="milestone-q orange">Q3</div>
+              <div class="milestone-text">Clinical collaboration with ICU partner established</div>
+            </div>
+            <div class="milestone-item">
+              <div class="milestone-q purple">Q4</div>
+              <div class="milestone-text">Real-time monitoring prototype deployed in pilot</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <h2>Let's Talk.</h2>
+          <p>Whether you're an investor, clinician, researcher, or potential partner — we want to hear from you.</p>
+          <div class="contact-links">
+            <a href="mailto:justin@regenesis-os.com" class="contact-link">
+              <span>✉</span> justin@regenesis-os.com
+            </a>
+            <a href="mailto:info@regenesis-os.com" class="contact-link">
+              <span>✉</span> info@regenesis-os.com
+            </a>
+            <div class="contact-link">
+              <span>📍</span> Los Angeles, California
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>I am a...</label>
+            <select>
+              <option value="">Select one</option>
+              <option>Investor</option>
+              <option>ICU Physician / Clinician</option>
+              <option>Researcher</option>
+              <option>Potential Partner</option>
+              <option>Press / Media</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us what you have in mind..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-logo">REGENESIS<span>-OS</span></div>
+          <p>Detecting Biological Collapse Before It Happens</p>
+          <p class="footer-legal">© 2025 Regenesis-OS Corp. All rights reserved.<br/>Provisional Patent Pending — USPTO</p>
+        </div>
+        <div class="footer-links">
+          <a href="#technology">Technology</a>
+          <a href="#validation">Validation</a>
+          <a href="#vision">Vision</a>
+          <a href="#about">About</a>
+          <a href="#investors">Investors</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-right">
+          <p>Raising $1.5M Pre-Seed</p>
+          <a href="mailto:justin@regenesis-os.com" class="btn-ghost small">Investor Inquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
